@@ -32,6 +32,21 @@ en:
   hello: "Hello world"
   layouts:
     basetitle: "Ruby on Rails Tutorial Sample App"
+    application:
+      sample_app: "Sample App"
+      home: "Home"
+      help: "Help"
+    footer:
+      the: "The"
+      title_tutor: "Ruby on Rails Tutorial"
+      link_tutor: "http://www.railstutorial.org/"
+      by: "by"
+      link_author: "http://www.michaelhartl.com/"
+      title_author: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      link_news: "http://news.railstutorial.org/"
+      title_news: "News"
   static_pages:
     home:
       title: "Home"
@@ -39,6 +54,8 @@ en:
       announce_home_html: "This is the home page for the %{href} sample application."
       link_detail: "Ruby on Rails Tutorial"
       link: "http://www.railstutorial.org/"
+      signup_alert: "Sign up now!"
+      logo: "Rails logo"
     help:
       title: "Help"
       announce_help_html: "Get help on the Ruby on Rails Tutorial at the %{help}. To get help on this sample app, see the %{book}"
@@ -57,3 +74,18 @@ en:
       screencast_link_detail: "screencast series"
       rails_link: "http://rubyonrails.org/"
       rails_link_detail: "Ruby on Rails"
+    contact:
+      title: "Contact"
+      announce_contact_html: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contact_link: "http://www.railstutorial.org/contact"
+      contact_link_detail: "contact page"
+    signup:
+      title: "Sign Up"
+      content: "This will be a signup page for new users."
+      signup_alert: "Sign up now!"
+  users:
+    new:
+      sign_up: "Sign up"
+      announce_new_html: "This will be a signup page for new users."
+      create_account: "Create my account"
+

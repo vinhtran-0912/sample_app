@@ -1,0 +1,14 @@
+<% provide :title, t(".title") %>
+<footer class="footer">
+  <small>
+    <%= t ".the" %> <%= link_to t(".title_tutor"), t(".link_tutor") %>
+    <%= t ".by" %> <%= link_to t(".title_author"), t(".link_author") %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <li><%= link_to t(".title_news"), t(".link_news") %></li>
+    </ul>
+  </nav>
+</footer>

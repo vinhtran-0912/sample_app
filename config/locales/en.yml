@@ -10,8 +10,8 @@ en:
       account: "Account"
       profile: "Profile"
       settings: "Settings"
-      logout: "Log out"
-      login: "Log in"
+      log_out: "Log out"
+      log_in: "Log in"
     footer:
       the: "The"
       title_tutor: "Ruby on Rails Tutorial"
@@ -69,8 +69,20 @@ en:
     load_user:
       error: "This user could not be found"
   shared:
-    _error_messages:
-      error: "error"
+    error_messages:
+      error: "The form contains"
+  sessions:
+    new:
+      login: "Log In"
+      password: "Password"
+      sign_up: "Sign up now!"
+      new_user: "New user?"
+      remember_me: "Remember me on this computer"
+    create:
+      success_message: "You've been logged in successfully"
+      error_messages: "Invalid email/password combination"
+    destroy:
+      logout_messages: "You've been logged out"
   helpers:
     label:
       user: #model

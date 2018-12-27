@@ -4,3 +4,6 @@ user:
   pass_minimum: 6
 user_helper:
   gravatar_length: 80
+session_controller:
+  remember_1: "1"
+  remember_0: "0"

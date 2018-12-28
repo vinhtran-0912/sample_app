@@ -1,7 +1,5 @@
 en:
-  hello: "Hello world"
   layouts:
-    basetitle: "Ruby on Rails Tutorial Sample App"
     header:
       sample_app: "Sample App"
       home: "Home"
@@ -10,8 +8,8 @@ en:
       account: "Account"
       profile: "Profile"
       settings: "Settings"
-      log_out: "Log out"
-      log_in: "Log in"
+      logout: "Log out"
+      login: "Log in"
     footer:
       the: "The"
       title_tutor: "Ruby on Rails Tutorial"
@@ -23,15 +21,19 @@ en:
       contact: "Contact"
       link_news: "http://news.railstutorial.org/"
       title_news: "News"
+    basetitle: "Ruby on Rails Tutorial Sample App"
+  shared:
+    _error_messages:
+      error: "The form contains"
   static_pages:
     home:
       title: "Home"
-      h1: "Sample App"
+      h1: "Welcome to the Sample App"
       announce_home_html: "This is the home page for the %{href} sample application."
       link_detail: "Ruby on Rails Tutorial"
       link: "http://www.railstutorial.org/"
       signup_alert: "Sign up now!"
-      logo: "Rails logo"
+      rails_logo: "Rails logo"
     help:
       title: "Help"
       announce_help_html: "Get help on the Ruby on Rails Tutorial at the %{help}. To get help on this sample app, see the %{book}"
@@ -51,26 +53,9 @@ en:
       rails_link: "http://rubyonrails.org/"
       rails_link_detail: "Ruby on Rails"
     contact:
-      title: "Contact"
-      announce_contact_html: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      announce_about_html: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_link: "http://www.railstutorial.org/contact"
       contact_link_detail: "contact page"
-    signup:
-      title: "Sign Up"
-      content: "This will be a signup page for new users."
-      signup_alert: "Sign up now!"
-  users:
-    new:
-      sign_up: "Sign up"
-      announce_new_html: "This will be a signup page for new users."
-      create_account: "Create my account"
-    create:
-      welcome: "Welcome to the Sample App!"
-    load_user:
-      error: "This user could not be found"
-  shared:
-    error_messages:
-      error: "The form contains"
   sessions:
     new:
       login: "Log In"
@@ -83,6 +68,32 @@ en:
       error_messages: "Invalid email/password combination"
     destroy:
       logout_messages: "You've been logged out"
+  users:
+    new:
+      sign_up: "Sign up"
+      announce_new_html: "This will be a signup page for new users."
+      create_account: "Create my account"
+    create:
+      sign_up_success: "Welcome to the Sample App!"
+    load_user:
+      error_messages: "This user could not be found"
+    edit:
+      title: "Edit user"
+      update: "Update your profile"
+      save: "Save changes"
+      gravatar_link: "http://gravatar.com/emails"
+      change: "change"
+      please_login: "Please log in."
+    update:
+      update_success: "Profile updated"
+    index:
+      title: "All users"
+    user:
+      delete: "delete"
+      confirm: "You sure?"
+    destroy:
+      destroy_succ: "User deleted"
+      destroy_failed: "Failed! User can't be deleted"
   helpers:
     label:
       user: #model
@@ -93,4 +104,3 @@ en:
       session:
         email: "Email"
         password: "Password"
-        active: "Account activated!"

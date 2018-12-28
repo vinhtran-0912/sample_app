@@ -2,6 +2,9 @@ user:
   name_maximum: 50
   email_maximum: 255
   pass_minimum: 6
+  gravatar_user: 50
+  page: 1
+  per_page: 20
 user_helper:
   gravatar_length: 80
 session_controller:

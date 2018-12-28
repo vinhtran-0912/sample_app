@@ -3,8 +3,10 @@ class UsersController < ApplicationController
   before_action :logged_in_user, except: [:new, :create, :show]
   before_action :correct_user, only: [:edit, :update]
   before_action :is_admin, only: :destroy
-
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate page: params[:page],
+      per_page: Settings.user.per_page
+  end
 
   def new
     @user = User.new
@@ -18,9 +20,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".welcome"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t(".check_email")
+      redirect_to root_path
     else
       render :new
     end
@@ -44,6 +46,20 @@ class UsersController < ApplicationController
       flash[:danger] = t ".destroy_failed"
     end
     redirect_to users_path
+  end
+
+  def following
+    @title = t ".following"
+    @users = @user.following.paginate page: params[:page],
+      per_page: Settings.user.per_page
+    render :show_follow
+  end
+
+  def followers
+    @title = t ".followers"
+    @users = @user.followers.paginate page: params[:page],
+      per_page: Settings.user.per_page
+    render :show_follow
   end
 
   private

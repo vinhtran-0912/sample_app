@@ -5,8 +5,14 @@ user:
   gravatar_user: 50
   page: 1
   per_page: 20
+  expire: 2
 user_helper:
   gravatar_length: 80
 session_controller:
   remember_1: "1"
   remember_0: "0"
+micropost:
+  gravatar: 50
+  pic_type: "image/jpeg,image/gif,image/png"
+  picture_size: 5
+  content_size: 140

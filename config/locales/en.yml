@@ -23,8 +23,23 @@ en:
       title_news: "News"
     basetitle: "Ruby on Rails Tutorial Sample App"
   shared:
-    _error_messages:
-      error: "The form contains"
+    form: "The form contains %{error_list}"
+    error:
+      one: "1 error"
+      other: "%{count} errors"
+    user_info:
+      view_profile: "view my profile"
+      count:
+        zero: "0 micropost"
+        one: "%{count} micropost"
+        other: "%{count} microposts"
+    micropost_form:
+      place_holder: "Compose new micropost..."
+      post: "Post"
+      type_pic: "image/jpeg,image/gif,image/png"
+    stats:
+      following: "following"
+      follower: "followers"
   static_pages:
     home:
       title: "Home"
@@ -34,6 +49,7 @@ en:
       link: "http://www.railstutorial.org/"
       signup_alert: "Sign up now!"
       rails_logo: "Rails logo"
+      feed: "Micropost Feed"
     help:
       title: "Help"
       announce_help_html: "Get help on the Ruby on Rails Tutorial at the %{help}. To get help on this sample app, see the %{book}"
@@ -66,8 +82,52 @@ en:
     create:
       success_message: "You've been logged in successfully"
       error_messages: "Invalid email/password combination"
+      inactivated: "Account not activated. Check your email for the activation link."
     destroy:
       logout_messages: "You've been logged out"
+      destroy_failed: "Failed! User can't be deleted"
+  password_resets:
+    email_sent: "Email sent with password reset instructions"
+    not_found: "Email address not found"
+    new:
+      forgot_pass: "Forgot password"
+      submit: "Submit"
+    edit:
+      reset_pass: "Reset password"
+    create:
+      cant_empty: "can't be empty"
+    check_expiration:
+      exprire: "Password reset has expired."
+    update:
+      reset_succ: "Password has been reset."
+    get_user:
+      error_messages: "Users can't be found"
+  account_activations:
+    edit:
+      activated: "Account activated!"
+      inactivated: "Invalid activation link"
+      subject: "Account activation"
+    password_reset:
+      reset: "To reset your password click the link below:"
+      exprire: "This link will expire in two hours."
+      ignore: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+      subject: "Password reset"
+      reset_pass: "Reset Password"
+      reset_click: "To reset your password click the link below:"
+  user_mailer:
+    account_activation:
+      hi: "Hi"
+      mail_greeting: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+      subject: "Account activation"
+    password_reset:
+      reset: "To reset your password click the link below:"
+      exprire: "This link will expire in two hours."
+      ignore: "If you did not request your password to be reset, please ignore this email and
+        your password will stay as it is."
+      subject: "Password reset"
+      reset_pass: "Reset Password"
+      reset_click: "To reset your password click the link below:"
   users:
     new:
       sign_up: "Sign up"
@@ -75,6 +135,7 @@ en:
       create_account: "Create my account"
     create:
       sign_up_success: "Welcome to the Sample App!"
+      check_email: "Please check your email to activate your account."
     load_user:
       error_messages: "This user could not be found"
     edit:
@@ -94,6 +155,34 @@ en:
     destroy:
       destroy_succ: "User deleted"
       destroy_failed: "Failed! User can't be deleted"
+    show:
+      microposts: "Microposts "
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view_profile: "view my profile"
+      microposts: "Microposts:"
+    following:
+      following: "Following"
+      followers: "Followers"
+    followers:
+      followers: "Followers"
+  microposts:
+    success: "Micropost created!"
+    deleted: "Micropost deleted"
+    failed: "Micropost can't be deleted"
+    cant_find: "The micropost can't be found"
+    micropost:
+      pic_size: "Maximum file size is 5MB. Please choose a smaller file."
+      delete: "delete"
+      sure: "You sure?"
+      posted: "Posted "
+      ago: " ago."
+  application:
+    logged_in_user:
+      login: "Please log in."
   helpers:
     label:
       user: #model
